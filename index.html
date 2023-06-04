@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,48 +22,72 @@
 
     <main>
       <div id="moving-text-container" class="w-full h-screen relative">
-        <h1 class="animate__animated animate__slideInLeft animate__infinite animate__slow text-7xl text-amber-200 font-extrabold absolute top-80 left-24">Funny Website</h1>
-        <h1 class="transform text-[6rem] max-sm:text-2xl text-lime-200 hover:translate-x-6 font-semibolds -rotate-180 absolute top-72 left-[28vw]">Twisted</h1>
-        <h1 class="transform text-[8rem] max-sm:text-5xl hover:skew-x-12 text-slate-200 font-semibolds -rotate-90 animate-pulse absolute top-64 left-[38vw]">Wicked</h1>
-        <h1 class="hover:opacity-40 text-[5rem] max-sm:text-2xl transform scale-x-(-1) text-green-200 absolute top-72 left-[44vw]">Interesting...</h1>
-        <button class="overflow-hidden h-auto w-auto text-4xl max-sm:text-xl font-semibold rounded-lg shadow-lg p-6 bg-amber-100 -bottom-20 text-center text-slate-900 z-10 animate__animated animate__slideInDown relative top-96 left-[74vw]">Tell me a joke</button>
+        <h1 id="h1-1" class="animate__animated animate__slideInLeft animate__infinite animate__slow text-7xl text-amber-200 font-extrabold absolute top-80 left-24">Funny Website</h1>
+        <h1 id="h1-2" class="animate__animated animate__slideInDown animate__infinite transform text-[6rem] max-sm:text-2xl text-lime-200 hover:translate-x-6 font-semibolds -rotate-180 absolute top-72 left-[28vw]">Twisted</h1>
+        <h1 id="h1-3" class="transform text-[8rem] max-sm:text-5xl hover:skew-x-12 text-slate-200 font-semibolds -rotate-90 animate-pulse absolute top-64 left-[38vw]">Wicked</h1>
+        <h1 id="h1-4" class="animate__animated animate__slideInUp animate__infinite hover:opacity-40 text-[5rem] max-sm:text-2xl transform scale-x-(-1) text-green-200 absolute top-72 left-[44vw]">Interesting...</h1>
+        <a href="#joke-span"><button id="button" class="animate__animated animate__slideInDown animate__infinite overflow-hidden h-auto w-auto text-4xl max-sm:text-xl font-semibold rounded-lg shadow-lg p-6 bg-amber-100 -bottom-20 text-center text-slate-900 z-10 relative top-96 left-[74vw]">Tell me a joke</button></a>
       </div>
 
-      <div id="cards-container" class="w-4/5 h-screen m-auto mt-0 mb-0">
+      <div id="cards-container" class="w-11/12 h-screen m-auto mt-0 mb-0">
 
-        <div id="card-row-1" class="w-full h-1/2 flex justify-center mb-8">
+        <div id="card-row-1" class="w-full h-3/5 flex justify-center mb-8">
           <div id="card-1" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/1.jpg" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-1" class="hidden text-3xl text-amber-50 font-bold mt-4">Nightshade</h1>
+            <p id="description-1" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">NightShade is a fierce warrior, known for her agility and stealth. She is a skilled fighter who prefers to strike from the shadows, using her knowledge of the terrain to outmaneuver her enemies. Her reputation precedes her, and many fear the mere mention of her name. Despite her formidable skills, NightShade is a solitary figure, keeping her own counsel and never revealing her true motives.</p>
+            <button id="favourite-1" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-1" src="src/1.jpg" alt="" class="w-full h-full rounded-md">
           </div>
           <div id="card-2" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/2.jpg" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-2" class="hidden text-3xl text-amber-50 font-bold mt-4">Warcry</h1>
+            <p id="description-2" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">Warcry is a fearsome knight who has risen from the dead to continue his quest for vengeance. He is a relentless fighter, driven by a single-minded determination to seek retribution against those who wronged him in life. Despite his undead status, Warcry possesses a supernatural agility and strength, making him a formidable opponent in battle. He is often seen leading his undead army into battle, his distinctive battle cry striking fear into the hearts of his enemies.</p>
+            <button id="favourite-2" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-2" src="src/2.jpg" alt="" class="w-full h-full rounded-md">
           </div>
           <div id="card-3" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/3.jpg" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-3" class="hidden text-3xl text-amber-50 font-bold mt-4">Grimshadow</h1>
+            <p id="description-3" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">GrimShadow is a powerful and solitary dark witch, feared for her formidable magic. She lives deep in the forest and rarely uses her powers for personal gain. Those who seek her out must be cautious, for she is known to be unpredictable and dangerous to cross. GrimShadow is a shadowy figure, cloaked in darkness and mystery, and her true intentions are known only to herself.</p>
+            <button id="favourite-3" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-3" src="src/3.jpg" alt="" class="w-full h-full rounded-md">
           </div>
           <div id="card-4" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/4.webp" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-4" class="hidden text-3xl text-amber-50 font-bold mt-4">Shadowstrike</h1>
+            <p id="description-4" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">Shadowstrike is a deadly assassin with a reputation for being both swift and stylish. He is known for his impeccable manners and gentlemanly demeanor, which contrast with his deadly profession. Shadowstrike is a master of disguise and can blend into any crowd, making him difficult to detect. He is a precise and efficient killer, using his lightning-fast reflexes and sharp intellect to outmaneuver his targets. Despite his profession, Shadowstrike operates with a strict moral code, never accepting a contract that would harm innocent people</p>
+            <button id="favourite-4" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-4" src="src/4.webp" alt="" class="w-full h-full rounded-md">
           </div>
         </div>
 
-        <div id="card-row-2" class="w-full h-1/2 flex justify-center">
+        <div id="card-row-2" class="w-full h-3/5 flex justify-center">
           <div id="card-5" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/5.webp" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-5" class="hidden text-3xl text-amber-50 font-bold mt-4">Deathwhisper</h1>
+            <p id="description-5" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">Deathwhisper is a mysterious and formidable soldier, with a reputation that spans across time and space. Little is known about his origins or his true identity, but he is rumored to have fought in some of the most significant battles in history, from ancient times to the modern era. Despite the passage of time, Deathwhisper remains a fierce warrior, with unparalleled skill and an unwavering determination to see his mission through to the end</p>
+            <button id="favourite-5" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-5" src="src/5.webp" alt="" class="w-full h-full rounded-md">
           </div>  
           <div id="card-6" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/6.jpg" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-6" class="hidden text-3xl text-amber-50 font-bold mt-4">Bloodrage</h1>
+            <p id="description-6" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">Bloodrage is a deadly fighter with a deceivingly cute exterior. She may appear innocent and sweet, but her petite frame belies her immense strength and ferocity in battle. Bloodrage is a master of close combat, using her agility and sharp reflexes to outmaneuver her opponents. She is also known for her cunning and resourcefulness, often devising creative strategies to take down her enemies. Despite her fearsome reputation, Bloodrage has a soft spot for animals and often goes out of her way to help them. She is a complex and intriguing figure, with a mix of adorable charm and deadly ferocity.</p>
+            <button id="favourite-6" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-6" src="src/6.jpg" alt="" class="w-full h-full rounded-md">
           </div>
           <div id="card-7" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/7.jpg" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-7" class="hidden text-3xl text-amber-50 font-bold mt-4">Shadowclaw</h1>
+            <p id="description-7" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">Shadowclaw is a formidable creature, a hybrid of man and tiger with razor-sharp claws and unmatched agility. He is a solitary figure, preferring to keep to himself and avoid unnecessary conflict. Shadowclaw is a skilled hunter, using his keen senses and stealth to stalk his prey. He is a fierce protector of his territory, and those who threaten it do so at their own risk. Despite his ferocity, Shadowclaw has a deep respect for the natural world and strives to live in harmony with it. He is a creature of mystery and power, with an unwavering spirit and an unmatched skillset.</p>
+            <button id="favourite-7" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-7" src="src/7.jpg" alt="" class="w-full h-full rounded-md">
           </div>
           <div id="card-8" class="m-4 bg-slate-600 bg-cover rounded-md shadow-lg w-full h-full text-center flex justify-between flex-col">
-            <img src="src/8.jpg" alt="" class="w-full h-full rounded-md">
+            <h1 id="character-8" class="hidden text-3xl text-amber-50 font-bold mt-4">Darkfire</h1>
+            <p id="description-8" class="hidden text-amber-50 font-bold m-4 mb-auto mt-auto">Darkfire is a blood magician of immense power and darkness. She wields a formidable command over the forces of blood and shadows, using them to bend others to her will. Darkfire is a solitary figure, shrouded in mystery and rarely revealing her true intentions. She is feared by many for her dark powers, which can bring even the bravest warriors to their knees. Despite her fearsome reputation, Darkfire has a deep sense of loyalty to those she considers her own. She will stop at nothing to protect them, using her formidable powers to strike down any who would seek to harm them.</p>
+            <button id="favourite-8" class="hidden p-4 bg-amber-100 text-xl font-bold rounded shadow-lg m-4">Add favourite</button>
+            <img id="img-8" src="src/8.jpg" alt="" class="w-full h-full rounded-md">
           </div>
         </div>
       </div>
 
-      <h1 class="absolute z-30 top-[250vh] text-[5rem] max-sm:text-xl m-auto mt-1 mb-0 font-extrabold text-slate-100">
-        <span>Because he couldn't see that well!</span>
+      <h1 class="z-30 w-full p-20 text-center mt-[75vh] text-[5rem] max-sm:text-xl mb-0 font-extrabold text-slate-100">
+        <span id="joke-span"></span>
         <span class="styles-module_blinkingCursor__yugAC styles-module_blinking__9VXRT" style="color: inherit;"></span>
       </h1>
      
@@ -84,7 +108,7 @@
         maxDistance: 17.00,
         showDots: false
       })
-</script>
+    </script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
